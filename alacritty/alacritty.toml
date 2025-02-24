@@ -1,0 +1,17 @@
+[font]
+size = 12
+
+[font.normal]
+family = "Ubuntu Mono Nerd Font"
+
+[font.bold]
+family = "Ubuntu Mono Nerd Font"
+
+[font.bold_italic]
+family = "Ubuntu Mono Nerd Font"
+
+[font.italic]
+family = "Ubuntu Mono Nerd Font"
+
+[general]
+import = ["~/.config/alacritty/colors/srcery.toml"]

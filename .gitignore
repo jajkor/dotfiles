@@ -1,0 +1,15 @@
+# Ignore everything in the current directory (.config)
+*
+
+# Do not ignore the .gitignore file itself
+!.gitignore
+
+# Do not ignore these directories and their contents
+!nvim/
+!alacritty/
+!tmux/
+
+# Ensure all files and subdirectories inside are tracked
+!nvim/**
+!alacritty/**
+!tmux/**

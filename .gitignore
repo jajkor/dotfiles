@@ -1,8 +1,9 @@
 # Ignore everything in the current directory (.config)
 *
 
-# Do not ignore the .gitignore file itself
+# Do not ignore the .gitignore and .bashrc file
 !.gitignore
+!.bashrc
 
 # Do not ignore these directories and their contents
 !nvim/

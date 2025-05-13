@@ -1,8 +1,8 @@
 # .bashrc
 
 # Norm
-LINE_NUM=$((1 + RANDOM % $(wc -l Documents/norm.txt | awk '{print $1}')))
-sed "${LINE_NUM}q;d" Documents/norm.txt
+LINE_NUM=$((1 + RANDOM % $(wc -l ~/Documents/norm.txt | awk '{print $1}')))
+sed "${LINE_NUM}q;d" ~/Documents/norm.txt
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -31,3 +31,10 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 . "$HOME/.cargo/env"
+
+# Check if we're in tmux and set custom orange PS1
+if [ -n "$TMUX" ]; then
+  ORANGE='\[\e[38;2;255;143;64m\]'
+  RESET='\[\e[0m\]'
+  export PS1="${ORANGE}\u@\h:\w\$${RESET} "
+fi

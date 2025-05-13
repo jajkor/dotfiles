@@ -1,12 +1,20 @@
+-- return {
+--   { "srcery-colors/srcery-vim" },
+--
+--   {
+--     "lazyvim/lazyvim",
+--     opts = {
+--       colorscheme = "srcery",
+--     },
+--   },
+-- }
 return {
-  -- add gruvbox
-  { "srcery-colors/srcery-vim" },
+  { "ayu-theme/ayu-vim" },
 
-  -- Configure LazyVim to load gruvbox
   {
-    "LazyVim/LazyVim",
+    "lazyvim/lazyvim",
     opts = {
-      colorscheme = "srcery",
+      colorscheme = "ayu",
     },
   },
 }
